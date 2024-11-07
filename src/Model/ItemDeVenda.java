@@ -8,8 +8,13 @@ package Model;
  *
  * @author mac
  */
-public interface ItemDeVenda<T> {
+
+import java.io.Serializable;
+
+ interface ItemDeVenda extends Comparable<ItemDeVenda>, Serializable {
     String getNome();
     double getPreco();
     void setPreco(double preco);
+    void atualizarDados();
+    String detalhes();
 }

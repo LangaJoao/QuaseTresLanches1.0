@@ -14,9 +14,8 @@ package Model;
     private No1<T> esquerdo, direito;
     private int altura;
 
-    public No1(T valor) {
-        this.valor = valor;
-        this.altura = 1;
+    public No1() {
+        
     }
 
     public T getValor() {

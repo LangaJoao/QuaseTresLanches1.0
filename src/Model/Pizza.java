@@ -9,43 +9,56 @@ package Model;
 /**
  *
  * @author Hp
- */
-public class Pizza1 implements ItemDeVenda {
+ */public class Pizza implements ItemDeVenda {
     private String nome;
     private double preco;
     private String recheio;
     private String borda;
     private String molho;
-
-    public Pizza1(String nome, double preco, String recheio, String borda, String molho) {
-        this.nome = nome;
-        this.preco = preco;
-        this.recheio = recheio;
-        this.borda = borda;
-        this.molho = molho;
+    
+    
+    public Pizza() {
+        
     }
 
-    public String detalhes() {
-        return String.format("Pizza: %s, Recheio: %s, Borda: %s, Molho: %s, Preço: R$ %.2f", 
-                             nome, recheio, borda, molho, preco);
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public double getPreco() {
         return preco;
     }
 
-    public void atualizarPreco(double novoPreco) {
-        this.preco = novoPreco;
-    }
-
-    @Override
-    public String getNome() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
     public void setPreco(double preco) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.preco = preco;
+    }
+
+    public String getRecheio() {
+        return recheio;
+    }
+
+    public void setRecheio(String recheio) {
+        this.recheio = recheio;
+    }
+
+    public String getBorda() {
+        return borda;
+    }
+
+    public void setBorda(String borda) {
+        this.borda = borda;
+    }
+
+    public String getMolho() {
+        return molho;
+    }
+
+    public void setMolho(String molho) {
+        this.molho = molho;
     }
 
     @Override
@@ -54,9 +67,18 @@ public class Pizza1 implements ItemDeVenda {
     }
 
     @Override
+    public String detalhes() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
     public int compareTo(ItemDeVenda t) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+
+
+
 }
 
 

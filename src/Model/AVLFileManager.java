@@ -8,6 +8,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class AVLFileManager {
+    
     private static final String NOME_ARQUIVO = "vendas.dat";
 
     public static void salvarParaArquivo(ArvoreAVL arvore) throws IOException {

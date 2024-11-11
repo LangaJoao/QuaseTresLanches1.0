@@ -33,7 +33,7 @@ public class AVLFileManager {
         try (ObjectInputStream entrada = new ObjectInputStream(new FileInputStream(NOME_ARQUIVO))) {
             ArrayList<Item> listaDeItens = (ArrayList<Item>) entrada.readObject();
             for (Item item : listaDeItens) {
-                arvore.insert(item);
+                arvore.inserir(item);
             }
         }
 

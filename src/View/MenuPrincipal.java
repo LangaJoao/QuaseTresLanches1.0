@@ -51,8 +51,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jComboBox5 = new javax.swing.JComboBox<>();
         jComboBox6 = new javax.swing.JComboBox<>();
-        jLabel12 = new javax.swing.JLabel();
-        jComboBox9 = new javax.swing.JComboBox<>();
         jTextField4 = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -61,8 +59,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jComboBox12 = new javax.swing.JComboBox<>();
-        jComboBox13 = new javax.swing.JComboBox<>();
-        jLabel18 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         tbRelatorio = new javax.swing.JPanel();
@@ -142,17 +138,17 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "Id", "Item", "Nome", "Tipo/Borda", "Recheio", "Massa/Molho", "Preco"
+                "Id", "Item", "Tipo/Borda", "Recheio", "Massa/Molho", "Preco"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false
+                false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -165,7 +161,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jLabel8.setText("Recheio:");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Frango Desfiado", "Frango com Catupiry", "Carne Moída", "Frango com Milho", "Queijo ", "Frango", "Palmito", "Carne Seca", "Camarão", "Atum", " ", " " }));
 
         jButton11.setText("Salvar");
 
@@ -181,31 +177,23 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jLabel11.setText("Massa:");
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Massa de farinha de trigo", "Massa de batata", "Massa de milho", "Massa de tapioca", "Massa de mandioca", "Massa folhada", "Massa podre (massa quebradiça)", "Massa de pizza", "Massa de pastel", "Massa de pão de queijo" }));
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel12.setText("Nome:");
-
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleione", "Coxinha", "Kibe", "Empada", "Esfirra", "Bolinha de Queijo", "Pastel", "Rissole", "Pão de Queijo", "Enroladinho de Salsicha", "Frango à Passarinho", "Bolinho de Bacalhau", "Pão de Batata", "Torta Salgada", "Churros Salgado", "Mini Pizza" }));
 
         jLabel13.setText("Preco:");
 
         jLabel14.setText("Molho");
 
-        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Molho de Tomate", "Molho Branco", "Molho Barbecue", "Molho de Alho", "Molho de Pesto", "Molho de Mostarda e Mel", "Molho de Queijo ", "Molho Picante ", "Molho de Ricota", "Molho de Ervas Finas", "Molho de Cogumelos", "Molho de Azeitonas", "Molho de Tomate com Manjericão", "Molho de Espinafre", "Molho de Curry" }));
 
-        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Calabresa", "Mussarela", "Frango com Catupiry", "Bacon", "Pepperoni", "Portuguesa", "Atum", "Quatro Queijos", "Cogumelos", "Presunto e Queijo", "Lombo Canadense", "Abobrinha com Queijo", "Berinjela com Tomate Seco", "Gorgonzola com Nozes" }));
 
         jLabel16.setText("Recheio:");
 
         jLabel17.setText("Borda:");
 
-        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel18.setText("Nome:");
+        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Borda Tradicional", "Borda Recheada com Queijo", "Borda Recheada com Catupiry", "Borda Recheada com Bacon", "Borda Recheada com Chocolate", "Borda de Alho", "Borda Crocante", "Borda com Ervas Finas", "Borda de Azeitona", "Borda de Frango com Catupiry" }));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel5.setText("Salgadinhos");
@@ -234,27 +222,23 @@ public class MenuPrincipal extends javax.swing.JFrame {
                                             .addComponent(jLabel6)
                                             .addComponent(jLabel8)
                                             .addComponent(jLabel2)
-                                            .addComponent(jLabel11)
-                                            .addComponent(jLabel12))
+                                            .addComponent(jLabel11))
                                         .addGap(60, 60, 60)
                                         .addGroup(tbPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(jTextField2)
-                                            .addComponent(jComboBox5, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jComboBox5, 0, 205, Short.MAX_VALUE)
                                             .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jComboBox6, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(jComboBox6, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                         .addGap(57, 57, 57)
                                         .addGroup(tbPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jLabel13)
                                             .addComponent(jLabel16)
                                             .addComponent(jLabel17)
-                                            .addComponent(jLabel14)
-                                            .addComponent(jLabel18))
+                                            .addComponent(jLabel14))
                                         .addGap(60, 60, 60)
                                         .addGroup(tbPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(jTextField4)
                                             .addComponent(jComboBox10, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jComboBox13, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(jComboBox12, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(jComboBox11, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(tbPedidosLayout.createSequentialGroup()
@@ -268,7 +252,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                                         .addComponent(jButton14)
                                         .addGap(18, 18, 18)
                                         .addComponent(jButton15)))
-                                .addGap(0, 37, Short.MAX_VALUE))))
+                                .addGap(0, 10, Short.MAX_VALUE))))
                     .addGroup(tbPedidosLayout.createSequentialGroup()
                         .addGroup(tbPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(tbPedidosLayout.createSequentialGroup()
@@ -302,13 +286,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addGroup(tbPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel9))
-                .addGap(28, 28, 28)
+                .addGap(18, 18, 18)
                 .addGroup(tbPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(tbPedidosLayout.createSequentialGroup()
-                        .addGroup(tbPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel12))
-                        .addGap(18, 18, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tbPedidosLayout.createSequentialGroup()
                         .addGroup(tbPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -324,11 +304,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                         .addGroup(tbPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel6)))
-                    .addGroup(tbPedidosLayout.createSequentialGroup()
-                        .addGroup(tbPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel18))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, tbPedidosLayout.createSequentialGroup()
                         .addGroup(tbPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel17)
                             .addComponent(jComboBox12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -344,7 +320,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                         .addGroup(tbPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel13))))
-                .addGap(98, 98, 98)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 143, Short.MAX_VALUE)
                 .addGroup(tbPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton11)
                     .addComponent(jButton12)
@@ -399,16 +375,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
                     .addGroup(tbRelatorioLayout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(tbRelatorioLayout.createSequentialGroup()
-                        .addGroup(tbRelatorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(tbRelatorioLayout.createSequentialGroup()
-                                .addComponent(jLabel15)
-                                .addGap(18, 18, 18)
-                                .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(282, Short.MAX_VALUE))))
+                        .addComponent(jLabel15)
+                        .addGap(18, 18, 18)
+                        .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(tbRelatorioLayout.createSequentialGroup()
                 .addGap(189, 189, 189)
                 .addComponent(jButton16)
@@ -514,21 +487,17 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox10;
     private javax.swing.JComboBox<String> jComboBox11;
     private javax.swing.JComboBox<String> jComboBox12;
-    private javax.swing.JComboBox<String> jComboBox13;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
-    private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

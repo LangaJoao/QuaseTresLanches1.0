@@ -33,6 +33,12 @@ public interface Item extends Serializable {
     String getNome();
 
     double getPreco();
+    int getId();
 
     String toString();
+
+    public void setPreco(double novoPreco);
+
+
+
 }
